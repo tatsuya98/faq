@@ -41,10 +41,16 @@ ul{
     padding: 30px;
     position: absolute;
     border-radius: 10px;
+    z-index: 1;
+
 }
 .image{
     position: relative;
     background-image: url(./assets/images/background-pattern-desktop.svg);
+    width: 100%;
+    height:350px;
+    z-index: -1;
+    top: -250px;
 }
 .plus-minus{
     margin-left: auto;
@@ -65,6 +71,11 @@ ul{
     .image{
         position: relative;
         background-image: url(./assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 250px;
+        z-index: -1;
+        top: -300px;
     }
     li{
         max-width: 25ch;
