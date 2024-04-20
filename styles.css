@@ -1,0 +1,75 @@
+@import url(https://fonts.google.com/specimen/Outfit?query=outfit);
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  body {
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(275, 100%, 97%);
+    
+}
+li{
+    align-self: center;
+}
+header{
+    display: flex;
+    gap: 15px
+}
+p{
+    max-width: 50ch;
+    color: hsl(292, 16%, 49%);
+}
+ul{
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+.answer{
+    visibility: collapse;
+}
+.container{
+    max-width: 30em;
+    background-color:  hsl(0, 0%, 100%);
+    padding: 30px;
+    position: absolute;
+    border-radius: 10px;
+}
+.image{
+    position: relative;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+}
+.plus-minus{
+    margin-left: auto;
+    appearance: none;
+    content: url(./assets/images/icon-plus.svg);
+}
+.plus-minus:hover{
+    cursor: pointer;
+}
+.plus-minus:checked {
+    content: url(./assets/images/icon-minus.svg);
+}
+.plus-minus:checked + .answer{
+    visibility: visible;
+}
+
+@media(max-width: 450px){
+    .image{
+        position: relative;
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+    }
+    li{
+        max-width: 25ch;
+    }
+    p{
+        max-width: 40ch;
+    }
+}
