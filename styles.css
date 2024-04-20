@@ -47,10 +47,13 @@ ul{
 .image{
     position: relative;
     background-image: url(./assets/images/background-pattern-desktop.svg);
-    width: 100%;
-    height:350px;
+    width: 100vw;
+    height: 45vh;
     z-index: -1;
-    top: -250px;
+    top: -260px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 .plus-minus{
     margin-left: auto;
@@ -72,10 +75,13 @@ ul{
         position: relative;
         background-image: url(./assets/images/background-pattern-mobile.svg);
         background-repeat: no-repeat;
-        width: 100%;
-        height: 250px;
+        width: 100vw;
+        height: 50vh;
         z-index: -1;
         top: -300px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
     }
     li{
         max-width: 25ch;
